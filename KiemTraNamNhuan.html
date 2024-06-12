@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="month???" id="month">
+<input type="button" value="Submit" onclick="hamTinhNamNhuan()">
+<script>
+    function hamTinhNamNhuan(){
+        let month=parseInt(document.getElementById("month").value);
+        if(month%4==0&&month%100!=0||month%100==0&&month%400==0)
+        {
+            alert("Day la nam nhuan ");
+        }
+        else
+        {
+            alert("Day la nam khong nhuan ");
+        }
+    };
+
+</script>
+</body>
+</html>
